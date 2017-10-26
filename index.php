@@ -1,8 +1,8 @@
 
 <?php
 
-//echo md5("lakhansen");
-//exit();
+echo md5("lakhansen");
+exit();
 @session_start();
 
 if (isset($_GET['action']) && $_GET['action'] == 'logout') {
