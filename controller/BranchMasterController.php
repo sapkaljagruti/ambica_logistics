@@ -23,14 +23,17 @@ class BranchMasterController {
         return $branch;
     }
 
-    public function insert_record($branch_name, $branch_code, $address, $pincode, $state, $std_code, $phone1, $phone2, $phone3, $fax, $mobile, $manager, $email) {
-
-        $ins = $this->model->insert($branch_name, $branch_code, $address, $pincode, $state, $std_code, $phone1, $phone2, $phone3, $fax, $mobile, $manager, $email);
-        if ($ins) {
-            header("location:views/view.php");
-        } else {
-            echo "Not inserted";
-        }
+    
+    public function insert_record() {
+        
+        $view_file='add_branchmaster.php';
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/views/layout.php';
+//        $ins = $this->model->insert($branch_name, $branch_code, $address, $pincode, $state, $std_code, $phone1, $phone2, $phone3, $fax, $mobile, $manager, $email);
+//        if ($ins) {
+//            $ins->branches();
+//        } else {
+//            echo "Not inserted";
+//        }
     }
 
     public function update($branch_id, $branch_name, $branch_code, $address, $pincode, $state, $std_code, $phone1, $phone2, $phone3, $fax, $mobile, $manager, $email) {

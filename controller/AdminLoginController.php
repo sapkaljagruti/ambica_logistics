@@ -18,10 +18,11 @@ class AdminLoginController {
             $hashed_password=  md5($password);
             $chk = $this->model->check_login($username, $hashed_password);
             if ($chk) {
-//                header("location:add_branchmaster.php");
-                require_once 'controller/BranchMasterController.php';
-                $obj = new BranchMasterController();
-                $obj->branches();
+                header("location:home.php");
+//                require_once 'controller/BranchMasterController.php';
+//                $obj = new BranchMasterController();
+//                $obj->insert_record($branch_name, $branch_code, $address, $pincode, $state, $std_code, $phone1, $phone2, $phone3, $fax, $mobile, $manager, $email);
+//                $obj->branches();
             } else {
                 $out = "Not";
                 include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/views/login.php';
