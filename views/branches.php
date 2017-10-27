@@ -22,7 +22,7 @@
                 <!-- /.box-header -->
 
                 <div class="box-body">
-                    <a href="?controller=branch&action=insert_record" class="btn btn-app">
+                    <a href="?controller=branch&action=add_newbranch" class="btn btn-app">
                         <i class="fa fa-plus"></i> Add
                     </a>
                     <div calss="table-responsive">
@@ -62,7 +62,8 @@
 //                                echo "<td>" . $row['mobile'] . "</td>";
 //                                echo "<td>" . $row['manager'] . "</td>";
 //                                echo "<td>" . $row['email'] . "</td>";
-                                    echo "<td><a href=\"edit_branch.php?id=" . $row['id'] . "\">Edit</a> || <a href=\"del.php?id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\">Delete</a></td>";
+                                echo "<td><a href=\"?controller=branch&action=edit_branch&id=" . $row['id'] . "\">Edit</a></td>";
+//                                    echo "<td><a href=\"edit_branchmaster.php?id=" . $row['id'] . "\">Edit</a> || <a href=\"del.php?id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\">Delete</a></td>";
                                     echo "</tr>";
                                 }
                                 ?>

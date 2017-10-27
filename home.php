@@ -11,6 +11,13 @@ if (isset($_GET["controller"])) {
                 $obj->branches();
             } elseif ($_GET["action"] == "add_newbranch") {
                 $obj->insert_record();
+            } elseif ($_GET["action"] == "edit_branch") {
+                if (isset($_GET["id"])) {
+                    $branch_id = $_GET["id"];
+                    $obj->update($branch_id);
+                }
+            } elseif ($_GET["action"] == "get_branch") {
+                $obj->update();
             }
         }
     }
