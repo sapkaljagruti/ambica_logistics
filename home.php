@@ -18,6 +18,11 @@ if (isset($_GET["controller"])) {
                 }
             } elseif ($_GET["action"] == "get_branch") {
                 $obj->update();
+            } elseif ($_GET["action"] == "delete_branch") {
+                if (isset($_GET['id'])) {
+                    $branch_id = $_GET['id'];
+                    $obj->delete($branch_id);
+                }
             }
         }
     }
