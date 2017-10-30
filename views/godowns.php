@@ -6,7 +6,7 @@
 
 <section class="content-header">
     <h1>
-        Branches
+        Godowns
     </h1>
 
 </section>
@@ -22,7 +22,7 @@
                 <!-- /.box-header -->
 
                 <div class="box-body">
-                    <a href="?controller=branch&action=add_newgodown" class="btn btn-app">
+                    <a href="?controller=godown&action=add_newgodown" class="btn btn-app">
                         <i class="fa fa-plus"></i> Add
                     </a>
                     <div calss="table-responsive">
@@ -32,7 +32,6 @@
                                     <td>Godown_name</td>
                                     <td>Code</td>
     <!--                                <td>Under Branch</td>
-                                    <td>Under Godown</td>
                                     <td>Address</td>
                                     <td>Phone</td>
                                     <td>Email</td>-->
@@ -41,17 +40,15 @@
                             </thead>
                             <tbody>
                                 <?php
-                                while ($row = mysqli_fetch_assoc($branches)) {
+                                while ($row = mysqli_fetch_assoc($godowns)) {
                                     echo "<tr>";
                                     echo "<td>" . $row['godown_name'] . "</td>";
                                     echo "<td>" . $row['code'] . "</td>";
-//                                echo "<td>" . $row['under_branch'] . "</td>";
-//                                echo "<td>" . $row['under_godown'] . "</td>";
+//                                echo "<td>" . $row['branch_id'] . "</td>";
 //                                echo "<td>" . $row['address'] . "</td>";
 //                                echo "<td>" . $row['phone'] . "</td>";
-//                                echo "<td>" . $row['email'] . "</td>";
-//                                echo "<td><a href=\"?controller=branch&action=edit_branch&id=" . $row['id'] . "\">Edit</a> || <a href=\"?controller=branch&action=delete_branch&id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\">Delete</a></td>";
-//                                    echo "<td><a href=\"edit_branchmaster.php?id=" . $row['id'] . "\">Edit</a> || <a href=\"del.php?id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\">Delete</a></td>";
+//                                echo "<td>" . $row['email_id'] . "</td>";
+                                echo "<td><a href=\"?controller=godown&action=edit_godowns&id=" . $row['id'] . "\">Edit</a> || <a href=\"?controller=godown&action=delete_godown&id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\">Delete</a></td>";
                                     echo "</tr>";
                                 }
                                 ?>
