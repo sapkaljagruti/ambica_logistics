@@ -38,7 +38,7 @@ class Godown {
     }
     
     public function upd_godown($godown_id,$godown_name,$code,$branch_id,$address,$phone_no,$email_id){
-        $upd=  mysqli_query($this->conn,"update godowns set godown_name='" . $godown_name."',code='". $code . "',branch_id='" . $branch_id . "',address='" . $address . "',phone_no='" . $phone_no . "',email_id='" . $email_id . "' where id='".$godown_id."'");
+        $upd=  mysqli_query($this->conn,"UPDATE godowns SET godown_name='" . $godown_name."',code='". $code . "',branch_id='" . $branch_id . "',address='" . $address . "',phone_no='" . $phone_no . "',email_id='" . $email_id . "' WHERE id='".$godown_id."'");
         return $upd;
         
     }

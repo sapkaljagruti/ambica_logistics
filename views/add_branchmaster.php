@@ -26,21 +26,21 @@
                         <div class="form-group">
                             <label for="inputBranch Name3" class="col-sm-2 control-label">Branch Name</label>
 
-                            <div class="col-sm-4">
-                                <input type="text" class="form-control" id="inputBranch Name3" name="branch_name">
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputBranch Name3" name="branch_name" required="required">
                             </div>
 
                             <label for="inputBranch Code3" class="col-sm-2 control-label">Code</label>
 
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="inputBranch Code3" name="branch_code">
+                                <input type="text" class="form-control" id="inputBranch Code3" name="branch_code" required="required">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="inputAddress3" class="col-sm-2 control-label">Address</label>
 
-                            <div class="col-sm-8">
+                            <div class="col-sm-10">
                                 <textarea rows="2" cols="50" class="form-control" id="inputAddress3" name="address">Address</textarea>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                             <label for="inputPhone3" class="col-sm-2 control-label">Phone</label>
 
                             <div class="col-sm-2">
-                                <input type="text" class="form-control" id="inputPhone3" name="phone1">
+                                <input type="text" class="form-control" id="inputPhone3" name="phone1" required="required">
                             </div>
 
                             <label for="inputPhone3" class="col-sm-2 control-label">Phone</label>

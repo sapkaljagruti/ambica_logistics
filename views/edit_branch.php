@@ -40,13 +40,13 @@
                                     <label for="inputBranch Name3" class="col-sm-2 control-label">Branch Name</label>
 
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="inputBranch Name3" name="branch_name" value=<?php echo $branch_name; ?>>
+                                        <input type="text" class="form-control" id="inputBranch Name3" name="branch_name" required="required" value=<?php echo $branch_name; ?>>
                                     </div>
                                 
                                     <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="inputCode3" name="branch_code" value=<?php echo $branch_code; ?>>
+                                        <input type="text" class="form-control" id="inputCode3" name="branch_code" required="required" value=<?php echo $branch_code; ?>>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -79,7 +79,7 @@
                                     <label for="inputPhone3" class="col-sm-2 control-label">Phone</label>
 
                                     <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputPhone3" name="phone1" value=<?php echo $phone1; ?>>
+                                        <input type="text" class="form-control" id="inputPhone3" name="phone1" required="required" value=<?php echo $phone1; ?>>
                                     </div>
                                 
                                     <label for="inputPhone3" class="col-sm-2 control-label">Phone</label>

@@ -38,8 +38,10 @@ if (isset($_GET["controller"])) {
             } elseif ($_GET["action"] == "edit_godowns") {
                 if (isset($_GET["id"])) {
                     $godown_id = $_GET["id"];
-                    $obj->get_godown($godown_id);
+                    $obj->update_godown($godown_id);
                 }
+            } elseif ($_GET["action"] == "get_godown") {
+                $obj->update_godown();
             } elseif ($_GET["action"] == "delete_godown") {
                 if (isset($_GET['id'])) {
                     $godown_id = $_GET['id'];
@@ -47,9 +49,29 @@ if (isset($_GET["controller"])) {
                 }
             }
         }
-//         elseif ($_GET["action"] == "get_godown") {
-//            $obj->update_godown();
-//        } 
+    } elseif ($controller == "destination") {
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/DestinationController.php';
+        $obj = new DestinationController();
+
+        if (isset($_GET["action"])) {
+            if ($_GET["action"] == "destinations") {
+                $obj->destinations();
+            } elseif ($_GET["action"] == "add_destination") {
+                $obj->add_destination();
+            } elseif ($_GET["action"] == "get_destination") {
+                if (isset($_GET['id'])) {
+                    $destination_id = $_GET['id'];
+                    $obj->update($destination_id);
+                }
+            } elseif ($_GET["action"] == "edit_destination") {
+                $obj->update();
+            } elseif ($_GET["action"] == "delete_destination") {
+                if (isset($_GET['id'])) {
+                    $destination_id = $_GET['id'];
+                    $obj->del($destination_id);
+                }
+            }
+        }
     }
 } else {
     $view_file = 'home.php';

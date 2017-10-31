@@ -14,37 +14,51 @@
                 <!-- /.box-header -->
                 <!-- form start -->
                 <?php
-                if (isset($godown)) {
-                    while ($row = mysqli_fetch_assoc($godown)) {
+                if (isset($destination)) {
+                    while ($row = mysqli_fetch_assoc($destination)) {
 
-                        $godown_name = $row['godown_name'];
-                        $code = $row['code'];
+                        $station_name = $row['station_name'];
+                        $pin = $row['pin'];
+                        $state = $row['state'];
+                        $std = $row['std'];
                         $branch_id = $row['branch_id'];
-                        $address = $row['address'];
-                        $phone_no = $row['phone_no'];
-                        $email_id = $row['email_id'];
+                        $code = $row['code'];
                         ?>
                         <form class="form-horizontal" action="" method="post">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="inputGodown Name3" class="col-sm-2 control-label">Godown Name</label>
+                                    <label for="inputStation Name3" class="col-sm-2 control-label">Station Name</label>
 
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputGodown Name3" name="godown_name" required="required" value=<?php echo $godown_name; ?>>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="inputStation Name3" name="station_name" required="required" value=<?php echo $station_name; ?>>
+                                    </div>
+
+                                    <label for="inputPin3" class="col-sm-2 control-label">Pin</label>
+
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="inputPin3" name="pin" value=<?php echo $pin; ?>>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputCode3" name="code" required="required" value=<?php echo $code; ?>>
+                                <div class="form-group">
+                                    <label for="inputState3" class="col-sm-2 control-label">State</label>
+
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control" id="inputState3" name="state" value=<?php echo $state; ?>>
+                                    </div>
+
+                                    <label for="inputSTD3" class="col-sm-2 control-label">STD</label>
+
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="inputSTD3" name="std" value=<?php echo $std; ?>>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="inputUnder Branch3" class="col-sm-2 control-label">Under Branch</label>
 
-                                    <div class="col-sm-6">
-                                        <select class="form-control" id="inputUnder branch3" name="branch_id" required="required">
+                                <div class="form-group">
+                                    <label for="inputZone Branch3" class="col-sm-2 control-label">Zone Branch</label>
+
+                                    <div class="col-sm-5">
+                                        <select class="form-control" id="inputZone branch3" name="branch_id" required="required" value=<?php echo $branch_id; ?>>
                                             <option value = "">Select branch</option>
                                             <?php
                                             while ($row = mysqli_fetch_assoc($branches)) {
@@ -58,26 +72,11 @@
                                             ?>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputAddress3" class="col-sm-2 control-label">Address</label>
 
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputAddress3" name="address" value=<?php echo $address; ?>>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPhone No3" class="col-sm-2 control-label">Phone No</label>
+                                    <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputPhone No3" name="phone_no" required="required" value=<?php echo $phone_no; ?>>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputEmail Id3" class="col-sm-2 control-label">Email Id</label>
-
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputEmail Id3" name="email_id" value=<?php echo $email_id; ?>>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="inputCode3" name="code" required="required" value=<?php echo $code; ?>>
                                     </div>
                                 </div>
                             </div>

@@ -21,14 +21,14 @@
                             <label for="inputGodown Name3" class="col-sm-2 control-label">Godown Name</label>
 
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputGodown Name3" name="godown_name">
+                                <input type="text" class="form-control" id="inputGodown Name3" name="godown_name" required="required">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputCode3" name="code">
+                                <input type="text" class="form-control" id="inputCode3" name="code" required="required">
                             </div>
                         </div>
                         <div class="form-group">
@@ -39,10 +39,11 @@
                                     <option value = "">Select branch</option>
                                     <?php
                                     while ($row = mysqli_fetch_assoc($branches)) {
-                                        echo "<option>" . $row['branch_name'] . "</option>";
+//                                        if
+                                        echo "<option value='" . $row['id'] . "'>" . $row['branch_name'] . "</option>";
                                     }
                                     ?>
-                                </select>
+                                        </select>
                             </div>
                         </div>
                         <div class="form-group">
@@ -56,7 +57,7 @@
                             <label for="inputPhone No3" class="col-sm-2 control-label">Phone No</label>
 
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputPhone No3" name="phone_no">
+                                <input type="text" class="form-control" id="inputPhone No3" name="phone_no" required="required">
                             </div>
                         </div>
                         <div class="form-group">
