@@ -12,19 +12,12 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/controller/DestinationController.php</file>
+            <file>file:/C:/xampp/htdocs/ambica_logistics/controller/AccountgroupController.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/views/layout.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/controller/BranchMasterController.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/views/Destinations.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/add_branchmaster.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/controller/GodownController.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/edit_branch.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/edit_destination.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/add_godownmaster.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/model/Destination.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/add_destination.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/home.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/edit_godowns.php</file>
+            <file>file:/C:/xampp/htdocs/ambica_logistics/views/add_accgroups.php</file>
+            <file>file:/C:/xampp/htdocs/ambica_logistics/views/godowns.php</file>
         </group>
     </open-files>
 </project-private>

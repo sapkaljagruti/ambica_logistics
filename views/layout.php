@@ -50,6 +50,7 @@
                                         <li><a href="?controller=branch&action=branches">Branch Master</a></li>
                                         <li><a href="?controller=godown&action=godowns">Godown Master</a></li>
                                         <li><a href="?controller=destination&action=destinations">Destination</a></li>
+                                        <li><a href="?controller=accountgroup&action=accountgroups">Account Group</a></li>
                                         <li><a href="AccountMaster.php">Account Master</a></li>
                                         <li><a href="BrokerMaster.php">Broker Master</a></li>
                                         <li><a href="Method_pack.php">Methods of Packing</a></li>

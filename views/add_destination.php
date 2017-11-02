@@ -51,7 +51,7 @@
                                     <option value = "">Select branch</option>
                                     <?php
                                     while ($row = mysqli_fetch_assoc($branches)) {
-//                                        if
+
                                         echo "<option value='" . $row['id'] . "'>" . $row['branch_name'] . "</option>";
                                     }
                                     ?>

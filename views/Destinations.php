@@ -49,7 +49,9 @@
 //                                echo "<td>" . $row['std'] . "</td>";
 //                                echo "<td>" . $row['branch_id'] . "</td>";
 //                                echo "<td>" . $row['code'] . "</td>";
-                                echo "<td><a href=\"?controller=destination&action=get_destination&id=" . $row['id'] . "\">Edit</a> || <a href=\"?controller=destination&action=delete_destination&id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\">Delete</a></td>";
+                                echo "<td><a href=\"?controller=destination&action=get_destination&id=" . $row['id'] . "\" class=\"btn btn-app\"><i class=\"fa fa-fw fa-eye\"></i>View</a>"
+                                    . "<a href=\"?controller=destination&action=edit_destination&id=" . $row['id'] . "\" class=\"btn btn-app\"><i class=\"fa fa-fw fa-pencil-square-o\"></i>Edit</a>"
+                                        . "<a href=\"?controller=destination&action=delete_destination&id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\" class=\"btn btn-app\"><i class=\"fa fa-fw fa-trash\"></i>Delete</a></td>";
                                     echo "</tr>";
                                 }
                                 ?>

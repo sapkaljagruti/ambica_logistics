@@ -58,17 +58,46 @@ if (isset($_GET["controller"])) {
                 $obj->destinations();
             } elseif ($_GET["action"] == "add_destination") {
                 $obj->add_destination();
-            } elseif ($_GET["action"] == "get_destination") {
+            } elseif ($_GET["action"] == "edit_destination") {
                 if (isset($_GET['id'])) {
                     $destination_id = $_GET['id'];
                     $obj->update($destination_id);
                 }
-            } elseif ($_GET["action"] == "edit_destination") {
-                $obj->update();
+            } elseif ($_GET["action"] == "get_destination") {
+                if (isset($_GET['id'])) {
+                    $destination_id = $_GET['id'];
+                    $obj->get_destination($destination_id);
+                }
             } elseif ($_GET["action"] == "delete_destination") {
                 if (isset($_GET['id'])) {
                     $destination_id = $_GET['id'];
                     $obj->del($destination_id);
+                }
+            }
+        }
+    } elseif ($controller == "accountgroup") {
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/AccountgroupController.php';
+        $obj = new AccountgroupController();
+
+        if (isset($_GET["action"])) {
+            if ($_GET["action"] == "accountgroups") {
+                $obj->view_accgroup();
+            } elseif ($_GET["action"] == "add_accgroup") {
+                $obj->ins_accgroup();
+            } elseif ($_GET["action"] == "get_accgroup") {
+                if (isset($_GET['id'])) {
+                    $accgroups_id = $_GET['id'];
+                    $obj->get_accgroup($accgroups_id);
+                }
+            } elseif ($_GET["action"] == "edit_accgroup") {
+                if (isset($_GET['id'])) {
+                    $accgroups_id = $_GET['id'];
+                    $obj->upd_accgroup($accgroups_id);
+                }
+            } elseif($_GET["action"]=="del_accgroup"){
+                if(isset($_GET['id'])){
+                    $accgroups_id = $_GET['id'];
+                    $obj->del_accgroup($accgroups_id);
                 }
             }
         }
