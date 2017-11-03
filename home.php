@@ -94,10 +94,52 @@ if (isset($_GET["controller"])) {
                     $accgroups_id = $_GET['id'];
                     $obj->upd_accgroup($accgroups_id);
                 }
-            } elseif($_GET["action"]=="del_accgroup"){
-                if(isset($_GET['id'])){
+            } elseif ($_GET["action"] == "del_accgroup") {
+                if (isset($_GET['id'])) {
                     $accgroups_id = $_GET['id'];
                     $obj->del_accgroup($accgroups_id);
+                }
+            }
+        }
+    } elseif ($controller == "manager") {
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/ManagerController.php';
+        $obj = new ManagerController();
+
+        if (isset($_GET["action"])) {
+            if ($_GET["action"] == "managers") {
+                $obj->view_manager();
+            } elseif ($_GET["action"] == "add_manager") {
+                $obj->insert_manager();
+            } elseif ($_GET["action"] == "get_manager") {
+                if (isset($_GET['id'])) {
+                    $manager_id = $_GET['id'];
+                    $obj->get_manager($manager_id);
+                }
+            } elseif ($_GET["action"] == "edit_manager") {
+                if (isset($_GET['id'])) {
+                    $manager_id = $_GET['id'];
+                    $obj->upd_manager($manager_id);
+                }
+            } elseif ($_GET["action"] == "del_manager") {
+                if (isset($_GET['id'])) {
+                    $manager_id = $_GET['id'];
+                    $obj->del_manager($manager_id);
+                }
+            }
+        }
+    } elseif ($controller == "packing") {
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/PackingController.php';
+        $obj = new PackingController();
+
+        if (isset($_GET["action"])) {
+            if ($_GET["action"] == "packings") {
+                $obj->view_packing();
+            } elseif ($_GET["action"] == "add_packing") {
+                $obj->ins_packing();
+            } elseif ($_GET["action"] == "get_packing") {
+                if (isset($_GET['id'])) {
+                    $packing_id = $_GET['id'];
+                    $obj->get_packing($packing_id);
                 }
             }
         }

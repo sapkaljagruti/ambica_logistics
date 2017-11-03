@@ -11,7 +11,7 @@
 
             <div class="box box-info">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Add Branches</h3>
+                    <h3 class="box-title">Add Godowns</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
@@ -21,14 +21,14 @@
                             <label for="inputGodown Name3" class="col-sm-2 control-label">Godown Name</label>
 
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputGodown Name3" name="godown_name" required="required">
+                                <input type="text" class="form-control" id="inputGodown Name3" name="godown_name" required="required" placeholder="Enter Godown Name">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputCode3" name="code" required="required">
+                                <input type="text" class="form-control" id="inputCode3" name="code" required="required" placeholder="Enter Code">
                             </div>
                         </div>
                         <div class="form-group">
@@ -50,21 +50,21 @@
                             <label for="inputAddress3" class="col-sm-2 control-label">Address</label>
 
                             <div class="col-sm-6">
-                                <textarea row="2" cols="40" class="form-control" id="inputAddress3" name="address"></textarea>
+                                <textarea row="2" cols="40" class="form-control" id="inputAddress3" name="address" placeholder="Enter Address"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPhone No3" class="col-sm-2 control-label">Phone No</label>
 
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputPhone No3" name="phone_no" required="required">
+                                <input type="text" class="form-control" id="inputPhone No3" name="phone_no" required="required" placeholder="Enter Phone No">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail Id3" class="col-sm-2 control-label">Email Id</label>
 
                             <div class="col-sm-6">
-                                <input type="text" class="form-control" id="inputEmail Id3" name="email_id">
+                                <input type="text" class="form-control" id="inputEmail Id3" name="email_id" placeholder="Enter Email Id">
                             </div>
                         </div>
                     </div>

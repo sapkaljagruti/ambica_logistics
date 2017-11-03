@@ -9,7 +9,7 @@
 
             <div class="box box-info">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Edit Branches</h3>
+                    <h3 class="box-title">Edit Godowns</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
@@ -44,7 +44,7 @@
                                     <label for="inputUnder Branch3" class="col-sm-2 control-label">Under Branch</label>
 
                                     <div class="col-sm-6">
-                                        <select class="form-control" id="inputUnder branch3" name="branch_id" required="required">
+                                        <select class="form-control" id="inputUnder branch3" name="branch_id" required="required" value=<?php echo $branch_id; ?>>
                                             <option value = "">Select branch</option>
                                             <?php
                                             while ($row = mysqli_fetch_assoc($branches)) {

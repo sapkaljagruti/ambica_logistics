@@ -11,8 +11,8 @@ class Branch {
         mysqli_select_db($this->conn, "ambica_logistics");
     }
 
-    public function insert($branch_name, $branch_code, $address, $pincode, $state, $std_code, $phone1, $phone2, $phone3, $fax, $mobile, $manager, $email) {
-        $in = mysqli_query($this->conn, "insert into branch_masters(branch_name,branch_code,address,pincode,state,std_code,phone1,phone2,phone3,fax,mobile,manager,email)values('" . $branch_name . "', '" . $branch_code . "', '" . $address . "','" . $pincode . "','" . $state . "','" . $std_code . "','" . $phone1 . "','" . $phone2 . "','" . $phone3 . "','" . $fax . "','" . $mobile . "','" . $manager . "','" . $email . "')");
+    public function insert($branch_name, $branch_code, $address, $pincode, $state, $std_code, $phone1, $phone2, $phone3, $fax, $mobile, $manager_id, $email) {
+        $in = mysqli_query($this->conn, "insert into branch_masters(branch_name,branch_code,address,pincode,state,std_code,phone1,phone2,phone3,fax,mobile,manager_id,email)values('" . $branch_name . "', '" . $branch_code . "', '" . $address . "','" . $pincode . "','" . $state . "','" . $std_code . "','" . $phone1 . "','" . $phone2 . "','" . $phone3 . "','" . $fax . "','" . $mobile . "','" . $manager_id . "','" . $email . "')");
         return $in;
     }
 
@@ -26,8 +26,8 @@ class Branch {
         return $get;
     }
 
-    public function upd_branch($branch_id, $branch_name, $branch_code, $address, $pincode, $state, $std_code, $phone1, $phone2, $phone3, $fax, $mobile, $manager, $email) {
-        $up_query = mysqli_query($this->conn, "UPDATE branch_masters SET branch_name='" . $branch_name . "',branch_code='" . $branch_code . "',address='" . $address . "',pincode='" . $pincode . "',state='" . $state . "',std_code='" . $std_code . "',phone1='" . $phone1 . "',phone2='" . $phone2 . "',phone3='" . $phone3 . "',fax='" . $fax . "',mobile='" . $mobile . "',manager='" . $manager . "',email='" . $email . "' WHERE id='" . $branch_id . "'");
+    public function upd_branch($branch_id, $branch_name, $branch_code, $address, $pincode, $state, $std_code, $phone1, $phone2, $phone3, $fax, $mobile, $manager_id, $email) {
+        $up_query = mysqli_query($this->conn, "UPDATE branch_masters SET branch_name='" . $branch_name . "',branch_code='" . $branch_code . "',address='" . $address . "',pincode='" . $pincode . "',state='" . $state . "',std_code='" . $std_code . "',phone1='" . $phone1 . "',phone2='" . $phone2 . "',phone3='" . $phone3 . "',fax='" . $fax . "',mobile='" . $mobile . "',manager_id='" . $manager_id . "',email='" . $email . "' WHERE id='" . $branch_id . "'");
         return $up_query;
     }
 

@@ -19,13 +19,13 @@
                             <label for="inputStation Name3" class="col-sm-2 control-label">Station Name</label>
 
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputStation Name3" name="station_name" required="required">
+                                <input type="text" class="form-control" id="inputStation Name3" name="station_name" required="required" placeholder="Enter Station Name">
                             </div>
 
                             <label for="inputPin3" class="col-sm-2 control-label">Pin</label>
 
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="inputPin3" name="pin">
+                                <input type="text" class="form-control" id="inputPin3" name="pin" placeholder="Enter Pin">
                             </div>
                         </div>
 
@@ -33,13 +33,13 @@
                             <label for="inputState3" class="col-sm-2 control-label">State</label>
 
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputState3" name="state">
+                                <input type="text" class="form-control" id="inputState3" name="state" placeholder="Enter State">
                             </div>
 
                             <label for="inputSTD3" class="col-sm-2 control-label">STD</label>
 
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="inputSTD3" name="std">
+                                <input type="text" class="form-control" id="inputSTD3" name="std" placeholder="Enter STD">
                             </div>
                         </div>
 
@@ -61,7 +61,7 @@
                             <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="inputCode3" name="code" required="required">
+                                <input type="text" class="form-control" id="inputCode3" name="code" required="required" placeholder="Enter Code">
                             </div>
                         </div>
                     </div>

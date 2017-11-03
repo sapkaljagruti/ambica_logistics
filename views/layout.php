@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>AdminLTE 2 | Data Tables</title>
+        <title>Ambica Logistics</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.6 -->
@@ -48,12 +48,13 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Master <span class="caret"></span></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="?controller=branch&action=branches">Branch Master</a></li>
+                                        <li><a href="?controller=manager&action=managers">Manager Master</a></li>
                                         <li><a href="?controller=godown&action=godowns">Godown Master</a></li>
                                         <li><a href="?controller=destination&action=destinations">Destination</a></li>
                                         <li><a href="?controller=accountgroup&action=accountgroups">Account Group</a></li>
                                         <li><a href="AccountMaster.php">Account Master</a></li>
                                         <li><a href="BrokerMaster.php">Broker Master</a></li>
-                                        <li><a href="Method_pack.php">Methods of Packing</a></li>
+                                        <li><a href="?controller=packing&action=packings">Methods of Packing</a></li>
                                         <li><a href="Desc_good.php">Description of Goods</a></li>
                                         <li><a href="Rate.php">Rate on</a></li>
                                         <li><a href="RateMaster.php">Rate Master</a></li>

@@ -9,33 +9,17 @@
             <!-- Horizontal Form -->
             <div class="box box-info">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Add Account Groups</h3>
+                    <h3 class="box-title">Add Packing Type</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
                 <form class="form-horizontal" action="" method="post">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="inputName3" class="col-sm-2 control-label">Name</label>
+                            <label for="inputPacking Type3" class="col-sm-2 control-label">Packing Type</label>
 
-                            <div class="col-sm-5">
-                                <input type="text" class="form-control" id="inputName3" name="name" required="required" placeholder="Enter Name">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputUnder Group3" class="col-sm-2 control-label">Under Group</label>
-
-                            <div class="col-sm-5">
-                                <select class="form-control" id="inputUnder Group3" name="parent_id" required="required">
-                                    <option value = "">Select Under Group</option>
-                                    <?php
-                                    while ($row = mysqli_fetch_assoc($accgroup)) {
-
-                                        echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
-                                    }
-                                    ?>
-                                </select>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputPacking Type3" name="packing_type" required="required" placeholder="Enter Packing Type">
                             </div>
                         </div>
                     </div>
