@@ -167,27 +167,42 @@ if (isset($_GET["controller"])) {
                     $goods_id = $_GET['id'];
                     $obj->get($goods_id);
                 }
-            } elseif ($_GET["action"] =="edit_goods") {
+            } elseif ($_GET["action"] == "edit_goods") {
                 if (isset($_GET['id'])) {
                     $goods_id = $_GET['id'];
                     $obj->upd($goods_id);
                 }
-            } elseif ($_GET["action"] =="del_goods") {
+            } elseif ($_GET["action"] == "del_goods") {
                 if (isset($_GET['id'])) {
                     $goods_id = $_GET['id'];
                     $obj->del($goods_id);
                 }
             }
         }
-    }elseif($controller=="ledger"){
+    } elseif ($controller == "ledger") {
         include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/LedgerController.php';
         $obj = new LedgerController();
-        
-        if(isset($_GET["action"])){
-            if($_GET["action"]=="ledgers"){
+
+        if (isset($_GET["action"])) {
+            if ($_GET["action"] == "ledgers") {
                 $obj->view();
-            }elseif($_GET["action"]=="add_ledger"){
+            } elseif ($_GET["action"] == "add_ledger") {
                 $obj->ins();
+            } elseif ($_GET["action"] == "get_ledger") {
+                if (isset($_GET['id'])) {
+                    $ledger_id = $_GET['id'];
+                    $obj->get($ledger_id);
+                }
+            }elseif ($_GET["action"] == "edit_ledger") {
+                if (isset($_GET['id'])) {
+                    $ledger_id = $_GET['id'];
+                    $obj->upd($ledger_id);
+                }
+            }elseif ($_GET["action"] == "del_ledger") {
+                if (isset($_GET['id'])) {
+                    $ledger_id = $_GET['id'];
+                    $obj->del($ledger_id);
+                }
             }
         }
     }

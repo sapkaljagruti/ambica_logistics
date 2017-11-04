@@ -24,14 +24,14 @@ class Ledger {
         return $get_query;
     }
 
-    public function upd($ledger_id, $account_name, $group_id, $contact_person, $address, $email, $mobile1, $mobile2, $office_no) {
-        $upd_query = mysqli_query($this->conn, "update ledger_master set account_name='" . $account_name . "',group_id'" . $group_id . "',contact_person='" . $contact_person . "',address='" . $address . "',email='" . $email . "',mobile1='" . $mobile1 . "',mobile2='" . $mobile2 . "',office_no='" . $office_no . "' where id='" . $ledger_id . "'");
-        return $upd_query;
+    public function upd($ledger_id,$account_name, $group_id, $contact_person, $address, $email, $mobile1, $mobile2, $office_no) {
+        $up_query = mysqli_query($this->conn, "UPDATE ledger_master SET account_name='" . $account_name . "',group_id='" . $group_id . "',contact_person='" . $contact_person . "',address='" . $address . "',email='" . $email . "',mobile1='" . $mobile1 . "',mobile2='" . $mobile2 . "',office_no='" . $office_no ."' where id='".$ledger_id."'");
+        return $up_query;
     }
 
     public function del($ledger_id) {
-        $del_query = mysqli_query($this->conn, "delete * from ledger_master where id='" . $ledger_id . "'");
-        return $del_query;
+        $del = mysqli_query($this->conn, "DELETE from ledger_master WHERE id='" . $ledger_id . "'");
+        return $del;
     }
 
 }

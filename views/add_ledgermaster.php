@@ -36,7 +36,7 @@
                                 <select class="form-control" id="inputAccount Group3" name="group_id" >
                                     <option value = "">Select Group</option>
                                     <?php
-                                    while ($row = mysqli_fetch_assoc($accgroup)) {
+                                    while ($row = mysqli_fetch_assoc($view_accgroup)) {
                                             echo "<option value='" . $row['id'] . "'>" . $row['name'] . "</option>";
                                     }
                                     ?>

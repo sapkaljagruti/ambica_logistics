@@ -12,22 +12,19 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/model/Ledger.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/controller/AccountgroupController.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/add_ledgermaster.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/views/layout.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/edit_manager.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/controller/BranchMasterController.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/add_branchmaster.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/branches.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/controller/ManagerController.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/views/edit_branch.php</file>
-            <file>file:/C:/xampp/htdocs/ambica_logistics/controller/LedgerController.php</file>
+            <file>file:/C:/xampp/htdocs/ambica_logistics/views/add_ledgermaster.php</file>
+            <file>file:/C:/xampp/htdocs/ambica_logistics/views/ins_co.php</file>
+            <file>file:/C:/xampp/htdocs/ambica_logistics/controller/Ins_co_Controller.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/views/accountgroups.php</file>
+            <file>file:/C:/xampp/htdocs/ambica_logistics/views/add_inscompany.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/views/edit_accgroup.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/model/AccountGroup.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/home.php</file>
+            <file>file:/C:/xampp/htdocs/ambica_logistics/views/add_accgroups.php</file>
             <file>file:/C:/xampp/htdocs/ambica_logistics/views/ledgers.php</file>
+            <file>file:/C:/xampp/htdocs/ambica_logistics/model/Ins_company.php</file>
         </group>
     </open-files>
 </project-private>
