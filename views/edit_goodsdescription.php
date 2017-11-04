@@ -9,23 +9,31 @@
 
             <div class="box box-info">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Edit Account Group</h3>
+                    <h3 class="box-title">Edit Goods Description</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
                 <?php
-                if (isset($get)) {
-                    while ($row = mysqli_fetch_assoc($get)) {
+                if (isset($goods)) {
+                    while ($row = mysqli_fetch_assoc($goods)) {
 
-                        $packing_type = $row['packing_type'];
+                        $goods_content = $row['goods_content'];
+                        $code = $row['code'];
                         ?>
                         <form class="form-horizontal" action="" method="post">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="inputPacking Type3" class="col-sm-2 control-label">Packing Type</label>
+                                    <label for="inputGoods Content3" class="col-sm-2 control-label">Goods Content</label>
 
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputPacking Type3" name="packing_type" value=<?php echo $packing_type; ?>>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputGoods Content3" name="goods_content" value=<?php echo $goods_content; ?>>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputCode3" class="col-sm-2 control-label">Code</label>
+
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="inputCode3" name="code" value=<?php echo $code; ?>>
                                     </div>
                                 </div>
 

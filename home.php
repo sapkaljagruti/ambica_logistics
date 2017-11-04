@@ -141,6 +141,53 @@ if (isset($_GET["controller"])) {
                     $packing_id = $_GET['id'];
                     $obj->get_packing($packing_id);
                 }
+            } elseif ($_GET["action"] == "edit_packing") {
+                if (isset($_GET['id'])) {
+                    $packing_id = $_GET['id'];
+                    $obj->upd_packing($packing_id);
+                }
+            } elseif ($_GET["action"] == "del_packing") {
+                if (isset($_GET['id'])) {
+                    $packing_id = $_GET['id'];
+                    $obj->del_packing($packing_id);
+                }
+            }
+        }
+    } elseif ($controller == "goods") {
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/GoodsController.php';
+        $obj = new GoodsController();
+
+        if (isset($_GET["action"])) {
+            if ($_GET["action"] == "goods_description") {
+                $obj->view_goods();
+            } elseif ($_GET["action"] == "add_goods") {
+                $obj->insert();
+            } elseif ($_GET["action"] == "get_goods") {
+                if (isset($_GET['id'])) {
+                    $goods_id = $_GET['id'];
+                    $obj->get($goods_id);
+                }
+            } elseif ($_GET["action"] =="edit_goods") {
+                if (isset($_GET['id'])) {
+                    $goods_id = $_GET['id'];
+                    $obj->upd($goods_id);
+                }
+            } elseif ($_GET["action"] =="del_goods") {
+                if (isset($_GET['id'])) {
+                    $goods_id = $_GET['id'];
+                    $obj->del($goods_id);
+                }
+            }
+        }
+    }elseif($controller=="ledger"){
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/LedgerController.php';
+        $obj = new LedgerController();
+        
+        if(isset($_GET["action"])){
+            if($_GET["action"]=="ledgers"){
+                $obj->view();
+            }elseif($_GET["action"]=="add_ledger"){
+                $obj->ins();
             }
         }
     }

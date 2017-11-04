@@ -9,7 +9,7 @@
 
             <div class="box box-info">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Edit Branches</h3>
+                    <h3 class="box-title">Edit Destination</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->

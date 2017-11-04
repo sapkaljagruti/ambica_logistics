@@ -52,10 +52,10 @@
                                         <li><a href="?controller=godown&action=godowns">Godown Master</a></li>
                                         <li><a href="?controller=destination&action=destinations">Destination</a></li>
                                         <li><a href="?controller=accountgroup&action=accountgroups">Account Group</a></li>
-                                        <li><a href="AccountMaster.php">Account Master</a></li>
+                                        <li><a href="?controller=ledger&action=ledgers">Ledger Master</a></li>
                                         <li><a href="BrokerMaster.php">Broker Master</a></li>
                                         <li><a href="?controller=packing&action=packings">Methods of Packing</a></li>
-                                        <li><a href="Desc_good.php">Description of Goods</a></li>
+                                        <li><a href="?controller=goods&action=goods_description">Description of Goods</a></li>
                                         <li><a href="Rate.php">Rate on</a></li>
                                         <li><a href="RateMaster.php">Rate Master</a></li>
                                         <li><a href="Default_ratemaster.php">Default Ratemaster</a></li>
