@@ -26,14 +26,14 @@
                                     <label for="inputGoods Content3" class="col-sm-2 control-label">Goods Content</label>
 
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="inputGoods Content3" name="goods_content" value=<?php echo $goods_content; ?>>
+                                        <input type="text" class="form-control" id="inputGoods Content3" name="goods_content" value="<?php echo $goods_content; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="inputCode3" name="code" value=<?php echo $code; ?>>
+                                        <input type="text" class="form-control" id="inputCode3" name="code" value="<?php echo $code; ?>">
                                     </div>
                                 </div>
 

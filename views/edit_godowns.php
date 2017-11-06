@@ -30,21 +30,21 @@
                                     <label for="inputGodown Name3" class="col-sm-2 control-label">Godown Name</label>
 
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputGodown Name3" name="godown_name" required="required" value=<?php echo $godown_name; ?>>
+                                        <input type="text" class="form-control" id="inputGodown Name3" name="godown_name" required="required" value="<?php echo $godown_name; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputCode3" name="code" required="required" value=<?php echo $code; ?>>
+                                        <input type="text" class="form-control" id="inputCode3" name="code" required="required" value="<?php echo $code; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputUnder Branch3" class="col-sm-2 control-label">Under Branch</label>
 
                                     <div class="col-sm-6">
-                                        <select class="form-control" id="inputUnder branch3" name="branch_id" required="required" value=<?php echo $branch_id; ?>>
+                                        <select class="form-control" id="inputUnder branch3" name="branch_id" required="required" value="<?php echo $branch_id; ?>">
                                             <option value = "">Select branch</option>
                                             <?php
                                             while ($row = mysqli_fetch_assoc($branches)) {
@@ -63,21 +63,21 @@
                                     <label for="inputAddress3" class="col-sm-2 control-label">Address</label>
 
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputAddress3" name="address" value=<?php echo $address; ?>>
+                                        <input type="text" class="form-control" id="inputAddress3" name="address" value="<?php echo $address; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPhone No3" class="col-sm-2 control-label">Phone No</label>
 
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputPhone No3" name="phone_no" required="required" value=<?php echo $phone_no; ?>>
+                                        <input type="text" class="form-control" id="inputPhone No3" name="phone_no" required="required" value="<?php echo $phone_no; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputEmail Id3" class="col-sm-2 control-label">Email Id</label>
 
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputEmail Id3" name="email_id" value=<?php echo $email_id; ?>>
+                                        <input type="text" class="form-control" id="inputEmail Id3" name="email_id" value="<?php echo $email_id; ?>">
                                     </div>
                                 </div>
                             </div>

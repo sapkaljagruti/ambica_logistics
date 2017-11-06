@@ -37,46 +37,46 @@
                                     <label for="inputBranch Name3" class="col-sm-2 control-label">Branch Name</label>
 
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="inputBranch Name3" name="branch_name" required="required" value=<?php echo $branch_name; ?>>
+                                        <input type="text" class="form-control" id="inputBranch Name3" name="branch_name" required="required" value="<?php echo $branch_name; ?>">
                                     </div>
 
                                     <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="inputCode3" name="branch_code" required="required" value=<?php echo $branch_code; ?>>
+                                        <input type="text" class="form-control" id="inputCode3" name="branch_code" required="required" value="<?php echo $branch_code; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputAddress3" class="col-sm-2 control-label">Address</label>
 
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputAddress3" name="address" value=<?php echo $address; ?>>
+                                        <input type="text" class="form-control" id="inputAddress3" name="address" value="<?php echo $address; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPin code3" class="col-sm-2 control-label">Pin code</label>
 
                                     <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputPin code3" name="pincode" value=<?php echo $pincode; ?>>
+                                        <input type="text" class="form-control" id="inputPin code3" name="pincode" value="<?php echo $pincode; ?>">
                                     </div>
 
                                     <label for="inputState3" class="col-sm-2 control-label">State</label>
 
                                     <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputState3" name="state" value=<?php echo $state; ?>>
+                                        <input type="text" class="form-control" id="inputState3" name="state" value="<?php echo $state; ?>">
                                     </div>
 
                                     <label for="inputSTD Code3" class="col-sm-2 control-label">STD Code</label>
 
                                     <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputSTD Code3" name="std_code" value=<?php echo $std_code; ?>>
+                                        <input type="text" class="form-control" id="inputSTD Code3" name="std_code" value="<?php echo $std_code; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPhone3" class="col-sm-2 control-label">Phone</label>
 
                                     <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputPhone3" name="phone1" required="required" value=<?php echo $phone1; ?>>
+                                        <input type="text" class="form-control" id="inputPhone3" name="phone1" required="required" value="<?php echo $phone1; ?>">
                                     </div>
 
                                     <label for="inputPhone3" class="col-sm-2 control-label">Phone</label>
@@ -95,20 +95,20 @@
                                     <label for="inputFax3" class="col-sm-2 control-label">Fax</label>
 
                                     <div class="col-sm-2">
-                                        <input type="text" class="form-control" id="inputFax3" name="fax" value=<?php echo $fax; ?>>
+                                        <input type="text" class="form-control" id="inputFax3" name="fax" value="<?php echo $fax; ?>">
                                     </div>
 
                                     <label for="inputMobile3" class="col-sm-2 control-label">Mobile</label>
 
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputMobile3" name="mobile" value=<?php echo $mobile; ?>>
+                                        <input type="text" class="form-control" id="inputMobile3" name="mobile" value="<?php echo $mobile; ?>">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="inputManager3" class="col-sm-2 control-label">Manager</label>
 
                                     <div class="col-sm-3">
-                                        <select class="form-control" id="inputManager3" name="manager_id" required="required" value=<?php echo $manager_id; ?>>
+                                        <select class="form-control" id="inputManager3" name="manager_id" required="required" value="<?php echo $manager_id; ?>">
                                             <option value = "">Select Manager</option>
                                             <?php
                                             while ($row = mysqli_fetch_assoc($view_manager)) {
@@ -126,7 +126,7 @@
                                     <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="inputEmail3" name="email" value=<?php echo $email; ?>>
+                                        <input type="text" class="form-control" id="inputEmail3" name="email" value="<?php echo $email; ?>">
                                     </div>
                                 </div>
                             </div>

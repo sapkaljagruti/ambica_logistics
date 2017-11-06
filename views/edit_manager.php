@@ -28,14 +28,14 @@
                                     <label for="inputName3" class="col-sm-2 control-label">Name</label>
 
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inputName3" name="name" required="required" value=<?php echo $name; ?>>
+                                <input type="text" class="form-control" id="inputName3" name="name" required="required" value="<?php echo $name; ?>">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inputEmail3" name="email" required="required" value=<?php echo $email; ?>>
+                                <input type="text" class="form-control" id="inputEmail3" name="email" required="required" value="<?php echo $email; ?>">
                             </div>
                         </div>
 
@@ -43,13 +43,13 @@
                             <label for="inputMobile3" class="col-sm-2 control-label">Mobile</label>
 
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="inputMobile3" name="mobile1" required="required" value=<?php echo $mobile1; ?>>
+                                <input type="text" class="form-control" id="inputMobile3" name="mobile1" required="required" value="<?php echo $mobile1; ?>">
                             </div>
 
                             <label for="inputMobile3" class="col-sm-2 control-label">Mobile</label>
 
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="inputMobile3" name="mobile2" value=<?php echo $mobile2; ?>>
+                                <input type="text" class="form-control" id="inputMobile3" name="mobile2" value="<?php echo $mobile2; ?>">
                             </div>
                         </div>
 

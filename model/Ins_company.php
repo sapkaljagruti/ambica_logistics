@@ -16,7 +16,7 @@ class Insurance_co {
 
     public function view() {
         $view=mysqli_query($this->conn,"select * from insurance_company order by id desc");
-        return $view();
+        return $view;
     }
     
     public function get($insco_id){
@@ -29,8 +29,7 @@ class Insurance_co {
         return $upd;
     }
     
-    public function del($insco_id)
-    {
+    public function del($insco_id) {
         $del=mysqli_query($this->conn,"delete from insurance_company where id='".$insco_id."'");
         return $del;
     }

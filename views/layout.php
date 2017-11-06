@@ -61,9 +61,8 @@
                                         <li><a href="Default_ratemaster.php">Default Ratemaster</a></li>
                                         <li><a href="VehicleMaster.php">Vehicle Master</a></li>
                                         <li><a href="?controller=ins_co&action=ins_comp">Insurance Company Master</a></li>
-                                        <li><a href="InsuranceMaster.php">Insurance Master</a></li>
+                                        <li><a href="?controller=insurance&action=insurances">Insurance Master</a></li>
                                         <li><a href="CourierMaster.php">Courier Master</a></li>
-                                        <li><a href="GroupMaster.php">Group Master</a></li>
                                     </ul>
                                 </li>
 

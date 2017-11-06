@@ -193,15 +193,67 @@ if (isset($_GET["controller"])) {
                     $ledger_id = $_GET['id'];
                     $obj->get($ledger_id);
                 }
-            }elseif ($_GET["action"] == "edit_ledger") {
+            } elseif ($_GET["action"] == "edit_ledger") {
                 if (isset($_GET['id'])) {
                     $ledger_id = $_GET['id'];
                     $obj->upd($ledger_id);
                 }
-            }elseif ($_GET["action"] == "del_ledger") {
+            } elseif ($_GET["action"] == "del_ledger") {
                 if (isset($_GET['id'])) {
                     $ledger_id = $_GET['id'];
                     $obj->del($ledger_id);
+                }
+            }
+        }
+    } elseif ($controller == "ins_co") {
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/Ins_co_Controller.php';
+        $obj = new Ins_co_Controller();
+
+        if (isset($_GET["action"])) {
+            if ($_GET["action"] == "ins_comp") {
+                $obj->view();
+            } elseif ($_GET["action"] == "add_ins_co") {
+                $obj->ins();
+            } elseif ($_GET["action"] == "get_ins_co") {
+                if (isset($_GET['id'])) {
+                    $insco_id = $_GET['id'];
+                    $obj->get($insco_id);
+                }
+            } elseif ($_GET["action"] == "upd_ins_co") {
+                if (isset($_GET['id'])) {
+                    $insco_id = $_GET['id'];
+                    $obj->upd($insco_id);
+                }
+            } elseif ($_GET["action"] == "del_ins_co") {
+                if (isset($_GET['id'])) {
+                    $insco_id = $_GET['id'];
+                    $obj->del($insco_id);
+                }
+            }
+        }
+    } elseif ($controller == "insurance") {
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/InsuranceController.php';
+        $obj = new InsuranceController();
+
+        if (isset($_GET["action"])) {
+            if ($_GET["action"] == "insurances") {
+                $obj->view();
+            } elseif ($_GET["action"] == "add_insurance") {
+                $obj->ins();
+            } elseif ($_GET["action"] == "get_insurance") {
+                if (isset($_GET["id"])) {
+                    $ins_id = $_GET['id'];
+                    $obj->get($ins_id);
+                }
+            } elseif ($_GET["action"] == "edit_insurance") {
+                if (isset($_GET["id"])) {
+                    $ins_id = $_GET['id'];
+                    $obj->upd($ins_id);
+                }
+            } elseif ($_GET["action"] == "del_insurance") {
+                if (isset($_GET["id"])) {
+                    $ins_id = $_GET['id'];
+                    $obj->del($ins_id);
                 }
             }
         }

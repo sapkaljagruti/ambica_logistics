@@ -26,7 +26,7 @@
                                     <label for="inputName3" class="col-sm-2 control-label">Name</label>
 
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputName3" name="name" required="required" value=<?php echo $name; ?>>
+                                        <input type="text" class="form-control" id="inputName3" name="name" required="required" value="<?php echo $name; ?>">
                                     </div>
                                 </div>
                                 
@@ -34,7 +34,7 @@
                                     <label for="inputUnder Group3" class="col-sm-2 control-label">Under Group</label>
 
                                     <div class="col-sm-6">
-                                        <select class="form-control" id="inputUnder Group3" name="parent_id" required="required" value=<?php echo $parent_id; ?>>
+                                        <select class="form-control" id="inputUnder Group3" name="parent_id" required="required" value="<?php echo $parent_id; ?>">
                                             <option value = "">Select branch</option>
                                             <?php
                                             while ($row = mysqli_fetch_assoc($accgroup)) {

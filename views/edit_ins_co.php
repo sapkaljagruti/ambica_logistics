@@ -9,7 +9,7 @@
 
             <div class="box box-info">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Edit Account Group</h3>
+                    <h3 class="box-title">Edit Insurance Company</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
@@ -17,15 +17,15 @@
                 if (isset($get)) {
                     while ($row = mysqli_fetch_assoc($get)) {
 
-                        $packing_type = $row['packing_type'];
+                        $company_name = $row['company_name'];
                         ?>
                         <form class="form-horizontal" action="" method="post">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="inputPacking Type3" class="col-sm-2 control-label">Packing Type</label>
+                                    <label for="inputCompany Name3" class="col-sm-2 control-label">Company Name</label>
 
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputPacking Type3" name="packing_type" value="<?php echo $packing_type; ?>">
+                                        <input type="text" class="form-control" id="inputCompany Name3" name="company_name" required="required" value="<?php echo $company_name; ?>">
                                     </div>
                                 </div>
 
