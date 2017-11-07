@@ -60,7 +60,7 @@
                             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 
                             <div class="col-sm-2">
-                                <input type="text" class="form-control" id="inputEmail3" name="email" placeholder="Email">
+                                <input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Email">
                             </div>
                         </div>
 

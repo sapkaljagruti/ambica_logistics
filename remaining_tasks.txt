@@ -1,0 +1,8 @@
+					REMAINING - TASK
+
+-Session.
+-Insurance master.
+-Courier Company.
+-Individual records should get display.
+-Page should get redirect to the view page after clicking on cancel button.
+-Form design should be like the sensation beauty centre.

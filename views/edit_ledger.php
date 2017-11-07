@@ -64,13 +64,13 @@
                             <label for="inputAddress3" class="col-sm-2 control-label">Address</label>
 
                             <div class="col-sm-2">
-                                <input type="text" class="form-control" id="inputAddress3" name="address" value="<?php echo $address; ?>">
+                                <textarea rows="1" cols="30" class="form-control" id="inputAddress3" name="address" placeholder="Address"><?php echo $address; ?></textarea>
                             </div>
 
                             <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 
                             <div class="col-sm-2">
-                                <input type="text" class="form-control" id="inputEmail3" name="email" value="<?php echo $email; ?>">
+                                <input type="email" class="form-control" id="inputEmail3" name="email" value="<?php echo $email; ?>">
                             </div>
                         </div>
 

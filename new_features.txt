@@ -1,0 +1,2 @@
+-Different company get to be add on home page.
+-After selecting a company the data should get displayed of that company only.

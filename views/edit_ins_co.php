@@ -24,7 +24,7 @@
                                 <div class="form-group">
                                     <label for="inputCompany Name3" class="col-sm-2 control-label">Company Name</label>
 
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-5">
                                         <input type="text" class="form-control" id="inputCompany Name3" name="company_name" required="required" value="<?php echo $company_name; ?>">
                                     </div>
                                 </div>

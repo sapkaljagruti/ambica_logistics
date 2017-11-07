@@ -53,7 +53,8 @@
 //                                echo "<td>" . $row['mobile1'] . "</td>";
 //                                echo "<td>" . $row['mobile2'] . "</td>";
                               //  echo "<td>" . $row['office_no'] . "</td>";
-                                    echo "<td><a href=\"?controller=ledger&action=edit_ledger&id=" . $row['id'] . "\"class=\"btn btn-app\"><i class=\"fa fa-fw fa-pencil-square-o\"></i>Edit</a>"
+                                    echo "<td><a href=\"?controller=ledger&action=edit_ledger&id=" . $row['id'] . "\"class=\"btn btn-app\"><i class=\"fa fa-fw fa-eye\"></i>View</a>"
+                                    . "<a href=\"?controller=ledger&action=edit_ledger&id=" . $row['id'] . "\"class=\"btn btn-app\"><i class=\"fa fa-fw fa-pencil-square-o\"></i>Edit</a>"
                                     . "<a href=\"?controller=ledger&action=del_ledger&id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\" class=\"btn btn-app\"><i class=\"fa fa-fw fa-trash\"></i>Delete</a></td>";
 //                                    echo "<td><a href=\"edit_branchmaster.php?id=" . $row['id'] . "\">Edit</a> || <a href=\"del.php?id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\">Delete</a></td>";
                                     echo "</tr>";

@@ -30,7 +30,7 @@
                                     <label for="inputStation Name3" class="col-sm-2 control-label">Station Name</label>
 
                                     <div class="col-sm-5">
-                                        <input type="text" class="form-control" id="inputStation Name3" name="station_name" required="required" value="<?php echo $station_name; ?>">
+                                        <input type="text" class="form-control" id="inputStation Name3" name="station_name" value="<?php echo $station_name; ?>">
                                     </div>
 
                                     <label for="inputPin3" class="col-sm-2 control-label">Pin</label>
@@ -58,7 +58,7 @@
                                     <label for="inputZone Branch3" class="col-sm-2 control-label">Zone Branch</label>
 
                                     <div class="col-sm-5">
-                                        <select class="form-control" id="inputZone branch3" name="branch_id" required="required" value="<?php echo $branch_id; ?>">
+                                        <select class="form-control" id="inputZone branch3" name="branch_id" value="<?php echo $branch_id; ?>">
                                             <option value = "">Select branch</option>
                                             <?php
                                             while ($row = mysqli_fetch_assoc($branches)) {
@@ -76,7 +76,7 @@
                                     <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
                                     <div class="col-sm-3">
-                                        <input type="text" class="form-control" id="inputCode3" name="code" required="required" value="<?php echo $code; ?>">
+                                        <input type="text" class="form-control" id="inputCode3" name="code" value="<?php echo $code; ?>">
                                     </div>
                                 </div>
                             </div>

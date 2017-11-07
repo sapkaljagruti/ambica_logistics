@@ -39,7 +39,7 @@
                                     echo "<tr>";
                                     echo "<td>" . $row['company_name'] . "</td>";
 
-                                    echo "<td><a href=\"?controller=accountgroup&action=edit_accgroup&id=" . $row['id'] . "\" class=\"btn btn-app\"><i class=\"fa fa-fw fa-eye\"></i>View</a>"
+                                    echo "<td><a href=\"?controller=ins_co&action=get_ins_co&id=" . $row['id'] . "\" class=\"btn btn-app\"><i class=\"fa fa-fw fa-eye\"></i>View</a>"
                                     . "<a href=\"?controller=ins_co&action=upd_ins_co&id=" . $row['id'] . "\" class=\"btn btn-app\"><i class=\"fa fa-fw fa-pencil-square-o\"></i>Edit</a>"
                                     . "<a href=\"?controller=ins_co&action=del_ins_co&id=" . $row['id'] . "\" onclick=\"return confirm('Want to delete?')\" class=\"btn btn-app\"><i class=\"fa fa-fw fa-trash\"></i>Delete</a></td>";
                                     echo "</tr>";

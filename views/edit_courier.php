@@ -9,31 +9,23 @@
 
             <div class="box box-info">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Edit Goods Description</h3>
+                    <h3 class="box-title">Edit Courier</h3>
                 </div>
                 <!-- /.box-header -->
                 <!-- form start -->
                 <?php
-                if (isset($goods)) {
-                    while ($row = mysqli_fetch_assoc($goods)) {
+                if (isset($get)) {
+                    while ($row = mysqli_fetch_assoc($get)) {
 
-                        $goods_content = $row['goods_content'];
-                        $code = $row['code'];
+                        $company_name = $row['company_name'];
                         ?>
                         <form class="form-horizontal" action="" method="post">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="inputGoods Content3" class="col-sm-2 control-label">Goods Content</label>
+                                    <label for="inputCompany Name3" class="col-sm-2 control-label">Company Name</label>
 
-                                    <div class="col-sm-5">
-                                        <input type="text" class="form-control" id="inputGoods Content3" name="goods_content" value="<?php echo $goods_content; ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputCode3" class="col-sm-2 control-label">Code</label>
-
-                                    <div class="col-sm-5">
-                                        <input type="text" class="form-control" id="inputCode3" name="code" value="<?php echo $code; ?>">
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="inputCompany Name3" name="company_name" value="<?php echo $company_name; ?>">
                                     </div>
                                 </div>
 

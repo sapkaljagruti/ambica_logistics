@@ -16,7 +16,13 @@
                 <form class="form-horizontal" action="" method="post">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="inputCompany Name3" class="col-sm-2 control-label">Company Name</label>
+                            <label for="inputPolicy Number3" class="col-sm-2 control-label">Policy Number</label>
+
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="inputPolicy Number3" name="policy_no" required="required" placeholder="Policy Number">
+                            </div>
+                            
+                             <label for="inputCompany Name3" class="col-sm-2 control-label">Company Name</label>
 
                             <div class="col-sm-3">
                                 <select class="form-control" id="inputCompany Name3" name="company_id" >
@@ -27,6 +33,17 @@
                                     }
                                     ?>
                                 </select>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputInsurance Payment Date3" class="col-sm-2 control-label">Insurance Payment Date</label>
+
+                            <div class="col-sm-3">
+                                <input type="datetime" class="form-control" id="inputStation Name3" name="ins_payment_date" required="required" placeholder="Insurance Payment Date">
                             </div>
                         </div>
                     </div>

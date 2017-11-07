@@ -18,15 +18,15 @@
                         <div class="form-group">
                             <label for="inputGoods Content3" class="col-sm-2 control-label">Goods Content</label>
 
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inputGoods Content3" name="goods_content" required="required" placeholder="Enter Goods Content">
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputGoods Content3" name="goods_content" required="required" placeholder="Goods Content">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputCode3" class="col-sm-2 control-label">Code</label>
 
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inputCode3" name="code" required="required" placeholder="Enter Code">
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputCode3" name="code" required="required" placeholder="Code">
                             </div>
                         </div>
                     </div>

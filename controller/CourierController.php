@@ -1,69 +1,67 @@
 <?php
 
-include_once 'model/Insurance.php';
-include_once 'model/Ins_company.php';
+include_once 'model/Courier.php';
 
-class InsuranceController {
+
+class CourierController {
 
     public $model;
 
     public function __construct() {
-        $this->model = new Insurance;
-        $this->ins_company_model = new Insurance_co;
+        $this->model = new Courier;
     }
 
     public function view() {
-        $insurance = $this->model->view();
+        $courier = $this->model->view();
         $view_file = "couriers.php";
         include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/views/layout.php';
     }
 
     public function ins() {
-        if (isset($_POST["company_id"])) {
-            $ins = $this->model->ins($_POST["company_id"]);
+        if (isset($_POST["company_name"])) {
+            $ins = $this->model->ins($_POST["company_name"]);
 
             if ($ins) {
-                header("location:home.php?controller=insurance&action=insurances");
+                header("location:home.php?controller=courier&action=couriers");
             }
         }
-        $ins_comp = $this->ins_company_model->view();
-        $insurance = $this->model->view();
-        $view_file = "add_insurance.php";
+        
+        $courier = $this->model->view();
+        $view_file = "add_couriermaster.php";
         include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/views/layout.php';
     }
 
-    public function get($ins_id) {
-        $get = $this->model->get($ins_id);
-        $view_file = 'edit_insurance.php';
+    public function get($cour_id) {
+        $get = $this->model->get($cour_id);
+        $view_file = 'edit_courier.php';
         include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/views/layout.php';
     }
 
-    public function upd($ins_id) {
-        $get = $this->model->get($ins_id);
-        if (isset($_POST["company_id"])) {
-            $upd = $this->model->upd($ins_id, $_POST["company_id"]);
+    public function upd($cour_id) {
+        $get = $this->model->get($cour_id);
+        if (isset($_POST["company_name"])) {
+            $upd = $this->model->upd($cour_id, $_POST["company_name"]);
 
             if ($upd) {
-                header("location:home.php?controller=insurance&action=insurances");
+                header("location:home.php?controller=courier&action=couriers");
             }
         }
-        $ins_comp = $this->ins_company_model->view();
-        $view_file = "edit_insurance.php";
+        $view_file = "edit_courier.php";
         include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/views/layout.php';
 
-        if (isset($_POST["company_id"])) {
-            $view_file = "insurances.php";
+        if (isset($_POST["company_name"])) {
+            $view_file = "couriers.php";
             include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/views/layout.php';
         }
     }
 
-    public function del($ins_id) {
-        $del = $this->model->del($ins_id);
+    public function del($cour_id) {
+        $del = $this->model->del($cour_id);
         if ($del) {
-            header("location:home.php?controller=insurance&action=insurances");
+            header("location:home.php?controller=courier&action=couriers");
         }
-        $insurance = $this->model->view();
-        $view_file = "insurances.php";
+        $courier = $this->model->view();
+        $view_file = "couriers.php";
         include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/views/layout.php';
     }
 

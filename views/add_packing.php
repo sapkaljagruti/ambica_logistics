@@ -19,7 +19,7 @@
                             <label for="inputPacking Type3" class="col-sm-2 control-label">Packing Type</label>
 
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" id="inputPacking Type3" name="packing_type" required="required" placeholder="Enter Packing Type">
+                                <input type="text" class="form-control" id="inputPacking Type3" name="packing_type" required="required" placeholder="Packing Type">
                             </div>
                         </div>
                     </div>

@@ -257,6 +257,33 @@ if (isset($_GET["controller"])) {
                 }
             }
         }
+    } elseif ($controller == "courier") {
+        include_once $_SERVER['DOCUMENT_ROOT'] . '/ambica_logistics/controller/CourierController.php';
+        $obj = new CourierController();
+
+
+        if (isset($_GET["action"])) {
+            if ($_GET["action"] == "couriers") {
+                $obj->view();
+            } elseif ($_GET["action"] == "add_courier") {
+                $obj->ins();
+            } elseif ($_GET["action"] == "get_courier") {
+                if (isset($_GET["id"])) {
+                    $cour_id = $_GET["id"];
+                    $obj->get($cour_id);
+                }
+            }elseif ($_GET["action"] == "edit_courier") {
+                if (isset($_GET["id"])) {
+                    $cour_id = $_GET["id"];
+                    $obj->upd($cour_id);
+                }
+            }elseif ($_GET["action"] == "del_courier") {
+                if (isset($_GET["id"])) {
+                    $cour_id = $_GET["id"];
+                    $obj->del($cour_id);
+                }
+            }
+        }
     }
 } else {
     $view_file = 'home.php';
